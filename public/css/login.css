@@ -1,0 +1,130 @@
+/* ======== CONFIGURAÇÕES GERAIS ======== */
+body {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ======== CONTAINERS DE LOGIN E CADASTRO ======== */
+.cadastro, .login {
+    width: 100%;
+    max-width: 400px;
+    color: black;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+    margin: 20px;
+}
+
+/* ======== FORMULÁRIO ======== */
+form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 40px 30px;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    background-color: #F29441;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 22px;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* ======== LABELS E INPUTS ======== */
+label {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+input {
+    height: 45px;
+    border-radius: 15px;
+    padding: 0 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.92);
+    color: black;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #555;
+}
+
+/* ======== BOTÃO ======== */
+button {
+    background-color: rgb(63, 31, 143);
+    height: 45px;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin: 25px auto 0;
+    width: 60%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(142, 110, 224);
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 768px) {
+    form {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cadastro, .login {
+        max-width: 90%;
+    }
+
+    form {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    input {
+        font-size: 13px;
+        height: 40px;
+    }
+
+    button {
+        font-size: 14px;
+        height: 40px;
+    }
+}

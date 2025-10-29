@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container-servicos {
+    background-color: #f49441;
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.card .content {
+    padding: 20px;
+}
+
+.card .content h3 {
+    font-size: 24px;
+    color: #2D3773;
+    margin-bottom: 15px;
+}
+
+.card .content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: #2D3773;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 10px 16px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #1c2458;
+}
+
+h4 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #444;
+}
+
+span {
+    font-family: inherit;
+    color: #777;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
